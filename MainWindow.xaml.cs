@@ -78,7 +78,6 @@ namespace TheLongDarkSaver
                     BaseDir.Refresh();
                     if (LWT != BaseDir.LastWriteTime)
                     {
-                        LWT = BaseDir.LastWriteTime;
                         Dispatcher.Invoke(() => WacherGrid.Background = Brushes.Yellow);
                     }
                     else
